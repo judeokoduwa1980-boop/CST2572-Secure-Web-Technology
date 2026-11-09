@@ -1,47 +1,45 @@
 # CST2572-Secure-Web-Technology
 Development of the "Middlesex Medical Centre" Website, which was part of my second year module project. It was built by a team of 4
 
+Project Title
+Simple overview of use/purpose.
 
 Description
-Longer description explaining the rationale/intent behind the project, what it's good for, and how it works. If the next two subsections are short enough, they can be merged up into this block—perhaps as bulleted lists.
+An in-depth paragraph about your project and overview of use.
 
-Features
-It's TINY. A short README is a good README.
-List other standout qualities that'll make a potential user want to try out your project.
-Built with
-Markdown
-Love
-Getting started
-Prerequisites
-Dependencies not explicitly covered in the installation process; e.g., OS restrictions.
+Getting Started
+Dependencies
+Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+ex. Windows 10
+Installing
+How/where to download your program
+Any modifications needed to be made to files/folders
+Executing program
+How to run the program
+Step-by-step bullets
+code blocks for commands
+Help
+Any advise for common problems or issues.
 
-Install
-Ideally, write a script whose usage is described here.
+command to run if program contains helper info
+Authors
+Contributors names and contact info
 
-Configure
-Manual, context-specific tasks not covered in the installation process.
+ex. Dominique Pizzie
+ex. @DomPizzie
 
-Usage
-GIFs are useful here to see the project in action.
-
-Troubleshooting
-Or FAQs, if that's more appropriate.
-
-Back matter
-Legal disclaimer
-Usage of this tool for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
-
-Acknowledgements
-Thanks to all who helped inspire this template.
-
-See also
-A simple README.md template
-A template to make good README.md
-A sample README for all your GitHub projects
-A simple README.md template to kickstart projects
-To-do
- Still need to do this
- Decided not to do this
- Done!
+Version History
+0.2
+Various bug fixes and optimizations
+See commit change or See release history
+0.1
+Initial Release
 License
-This project is licensed under the MIT License.
+This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+
+Acknowledgments
+Inspiration, code snippets, etc.
+
+
+
+
