@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Middlesex Medical Centre</title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon-1.jpeg">
+
+    <style>
+        /* PORTAL ACCESS SECTION */
+        .portal-access {
+            padding: 50px 20px;
+            background: #f4f8fc;
+        }
+
+        .portal-access-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .portal-access-heading {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .portal-access-heading h2 {
+            color: #17324d;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .portal-access-heading p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .portal-eyebrow {
+            color: #147d8b !important;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .portal-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .portal-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 13px;
+            padding: 25px;
+            min-height: 230px;
+            background: #ffffff;
+            border: 1px solid #e1e8f0;
+            border-radius: 14px;
+            text-decoration: none;
+            color: #24364b;
+            box-shadow: 0 5px 18px rgba(25, 50, 80, 0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .portal-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(25, 50, 80, 0.12);
+        }
+
+        .portal-card-top {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .portal-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            background: #eaf5f8;
+            font-size: 27px;
+        }
+
+        .portal-arrow {
+            color: #147d8b;
+            font-size: 25px;
+        }
+
+        .portal-card h3 {
+            margin: 0;
+            color: #17324d;
+            font-size: 21px;
+        }
+
+        .portal-card p {
+            margin: 0;
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .portal-card-link {
+            margin-top: auto;
+            color: #147d8b;
+            font-weight: 700;
+        }
+
+        @media (max-width: 800px) {
+            .portal-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portal-access-heading h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="brand">
+                <img src="images/icon-1.jpeg" alt="Middlesex Medical Centre logo">
+                <span>Middlesex Medical Centre</span>
+            </a>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="appointments.html">Appointments</a>
+                <a href="prescriptions.html">Prescriptions</a>
+                <a href="new-patients.html">New Patients</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="#portal-access">Portals</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- MAIN BANNER -->
+        <section class="hero" id="home">
+            <div class="welcome">
+                <h1>Welcome to<br>
+                    Middlesex Medical Centre
+                </h1>
+
+                <p>Welcome to our practice website</p>
+            </div>
+        </section>
+
+        <!-- ADMIN, DOCTOR AND PATIENT PORTALS -->
+        <section class="portal-access" id="portal-access">
+
+            <div class="portal-access-inner">
+
+                <div class="portal-access-heading">
+                    <p class="portal-eyebrow">PORTAL ACCESS</p>
+                    <h2>Choose Your Portal</h2>
+                    <p>
+                        Select the area you need to access.
+                    </p>
+                </div>
+
+                <div class="portal-grid">
+
+                    <!-- ADMIN PORTAL -->
+                    <a href="admin-login.html" class="portal-card">
+
+                        <div class="portal-card-top">
+                            <span class="portal-icon">🛡️</span>
+                            <span class="portal-arrow">→</span>
+                        </div>
+
+                        <h3>Admin Portal</h3>
+
+                        <p>
+                            Review appointment requests and manage
+                            bookings for the practice.
+                        </p>
+
+                        <span class="portal-card-link">
+                            Open Admin Portal →
+                        </span>
+
+                    </a>
+
+                    <!-- DOCTOR PORTAL -->
+                    <a href="doctor-login.html" class="portal-card">
+
+                        <div class="portal-card-top">
+                            <span class="portal-icon">🩺</span>
+                            <span class="portal-arrow">→</span>
+                        </div>
+
+                        <h3>Doctor Portal</h3>
+
+                        <p>
+                            Access the doctor area for clinical
+                            appointment management.
+                        </p>
+
+                        <span class="portal-card-link">
+                            Open Doctor Portal →
+                        </span>
+
+                    </a>
+
+                    <!-- PATIENT PORTAL -->
+                    <a href="patient.html" class="portal-card">
+
+                        <div class="portal-card-top">
+                            <span class="portal-icon">👤</span>
+                            <span class="portal-arrow">→</span>
+                        </div>
+
+                        <h3>Patient Portal</h3>
+
+                        <p>
+                            Visit the patient area and access
+                            patient services.
+                        </p>
+
+                        <span class="portal-card-link">
+                            Open Patient Portal →
+                        </span>
+
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- QUICK ACCESS CARDS -->
+        <section class="quick-links">
+
+            <a href="#new-patients" class="quick-card">
+                <span class="card-icon">👤</span>
+                <h2>NEW PATIENT REGISTRATIONS</h2>
+                <p>Find out how to register with our practice.</p>
+            </a>
+
+            <a href="#services" class="quick-card">
+                <span class="card-icon">🩺</span>
+                <h2>ONLINE CONSULTATIONS</h2>
+                <p>Get information about online consultations.</p>
+            </a>
+
+            <a href="#appointments" class="quick-card">
+                <span class="card-icon">📅</span>
+                <h2>APPOINTMENTS</h2>
+                <p>Learn how to arrange an appointment.</p>
+            </a>
+
+            <a href="#prescriptions" class="quick-card">
+                <span class="card-icon">💊</span>
+                <h2>PRESCRIPTIONS</h2>
+                <p>Find information about repeat prescriptions.</p>
+            </a>
+
+        </section>
+
+        <!-- WELCOME INFORMATION -->
+        <section class="information" id="about">
+
+            <h2>Welcome to our practice</h2>
+
+            <p>
+                We aim to provide friendly, accessible healthcare
+                information for our patients. Explore our website to
+                learn about our services, appointments and practice.
+            </p>
+
+        </section>
+
+        <!-- SERVICES -->
+        <section class="information" id="services">
+
+            <h2>Our Services</h2>
+
+            <p>
+                Find information about the services available at our
+                practice and how to access the right support.
+            </p>
+
+        </section>
+
+        <!-- NEW PATIENTS -->
+        <section class="information" id="new-patients">
+
+            <h2>New Patients</h2>
+
+            <p>
+                New to the area? Find out more about registering with
+                our practice and the information you may need.
+            </p>
+
+        </section>
+
+        <!-- APPOINTMENTS -->
+        <section class="information" id="appointments">
+
+            <h2>Appointments</h2>
+
+            <p>
+                Learn about appointment options and how to contact
+                the practice for assistance.
+            </p>
+
+            <a href="appointments.html">Book an Appointment →</a>
+
+        </section>
+
+        <!-- PRESCRIPTIONS -->
+        <section class="information" id="prescriptions">
+
+            <h2>Prescriptions</h2>
+
+            <p>
+                Find guidance about repeat prescriptions and how to
+                request your medication.
+            </p>
+
+            <a href="prescriptions.html">View Prescriptions →</a>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="footer">
+
+        <div class="footer-container">
+
+            <!-- PRACTICE INFORMATION -->
+            <div class="footer-column footer-brand">
+
+                <a href="index.html" class="footer-logo">
+                    <img src="images/icon-1.jpeg" alt="Middlesex Medical Centre logo">
+                    <span>Middlesex Medical Centre</span>
+                </a>
+
+                <p class="footer-description">
+                    Providing accessible healthcare information
+                    for our community.
+                </p>
+
+                <h3>Our Practice</h3>
+                <p>London, United Kingdom</p>
+                <p>Healthcare information and patient support.</p>
+
+            </div>
+
+            <!-- THE PRACTICE -->
+            <div class="footer-column">
+
+                <h3>The Practice</h3>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Our Services</a>
+                <a href="new-patients.html">New Patients</a>
+                <a href="doctors.html">Meet the Team</a>
+                <a href="contact.html">Contact Us</a>
+
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+                <a href="appointments.html">Appointments</a>
+                <a href="prescriptions.html">Prescriptions</a>
+                <a href="new-patients.html">Patient Registration</a>
+                <a href="services.html">Healthcare Services</a>
+                <a href="patient.html">Patient Area</a>
+                <a href="doctor.html">Doctor Portal</a>
+                <a href="admin.html">Admin Portal</a>
+
+            </div>
+
+            <!-- CONTACT -->
+            <div class="footer-column footer-contact" id="contact">
+
+                <h3>Contact Information</h3>
+
+                <p>
+                    <strong>Practice:</strong><br>
+                    Middlesex Medical Centre
+                </p>
+
+                <p>
+                    <strong>Location:</strong><br>
+                    London, United Kingdom
+                </p>
+
+                <p class="footer-note">
+                    For emergencies, call 999.
+                    This website is an educational project.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Middlesex Medical Centre.
+                University project prototype.
+            </p>
+
+            <div class="footer-legal">
+                <a href="#about">About</a>
+                <a href="#footer">Website Information</a>
+                <a href="#footer">Accessibility</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
